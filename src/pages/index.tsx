@@ -24,6 +24,7 @@ const Index = () => {
       <h1 className="text-2xl font-bold">
         Boilerplate code for your Nextjs project with Tailwind CSS
       </h1>
+      <button>Antd Button</button>
       <p>
         <span role="img" aria-label="rocket">
           🚀

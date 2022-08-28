@@ -1,5 +1,7 @@
 import CustomCarousel from '@/components/Carousel';
 import Header from '@/components/Header';
+import ListNewsOverviews from '@/components/NewsOverview';
+import ListProductOverviews from '@/components/ProductOverview';
 import { Meta } from '@/layouts/Meta';
 import { Main } from '@/templates/Main';
 
@@ -15,6 +17,8 @@ const Index = () => {
     >
       <Header />
       <CustomCarousel />
+      <ListProductOverviews />
+      <ListNewsOverviews />
     </Main>
   );
 };

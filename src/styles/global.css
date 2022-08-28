@@ -1,8 +1,27 @@
 @tailwind base;
 
 @layer base {
+  body {
+    @apply text-[#1f2937]
+  }
+
   button {
     @apply text-white rounded-lg py-2 px-3 bg-gradient-to-r from-cyan-500 to-blue-500;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold
+  }
+
+  h1 {
+    @apply text-4xl sm:text-5xl md:text-6xl font-[Raleway]
+  }
+
+  h2 {
+    @apply text-2xl sm:text-3xl
+  }
+
+  .hover-animation {
+    @apply duration-200 transition-all ease-in
   }
 }
 
@@ -16,4 +35,19 @@
 
 .content ul {
   @apply my-6;
+}
+
+.product:hover .review {
+  @apply -translate-y-full
+}
+
+.product:hover img {
+  @apply scale-110
+}
+
+.news:hover .date{
+  @apply bg-amber-900
+}
+.news:hover .date span{
+  @apply text-white
 }
